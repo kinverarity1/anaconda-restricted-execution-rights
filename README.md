@@ -13,22 +13,21 @@ I believe you can use this path with needing to contact the Helpdesk.
 
 ## Step 2
 
-Download and unzip the contents of this repository into that location, so that you end up with at least these files:
+Create these folders if they don't already exist:
 
 <pre>
-<span style="background-color: lightcyan">c:\devapps\</span>init.cmd
-<span style="background-color: lightcyan">c:\devapps\</span>install_hook.bat
-</pre>
-
-And these folder paths should also exist (create them if necessary):
-
-<pre>
+<span style="background-color: lightcyan">c:\devapps</span>
 <span style="background-color: lightcyan">c:\devapps\</span>temp
 <span style="background-color: lightcyan">c:\devapps\</span>python
 <span style="background-color: lightcyan">c:\devapps\</span>python\setup
 </pre>
 
-There will be some other stuff like this README, you can ignore or detail that.
+Download these files into these locations:
+
+<pre>
+<a href="https://raw.githubusercontent.com/kinverarity1/anaconda-restricted-execution-rights/master/init.cmd"><span style="background-color: lightcyan">c:\devapps\</span>init.cmd</a>
+<a href="https://raw.githubusercontent.com/kinverarity1/anaconda-restricted-execution-rights/master/install_hook.bat"><span style="background-color: lightcyan">c:\devapps\</span>install_hook.bat</a>
+</pre>
 
 ## Step 3
 
