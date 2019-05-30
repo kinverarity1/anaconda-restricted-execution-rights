@@ -47,14 +47,14 @@ start /wait "" <span style="background-color: lightcyan">c:\devapps\</span>pytho
 </pre>
 
 You will need to change the default location to which it installs. It defaults to something under ``c:\users``. E.g. for this example we would change it to: 
-<span style="background-color: lightcyan"><code>c:\devapps\\</code></span><code>python\\</code><span style="background-color: honeydew"><code>miniconda3</code></span>
+<span style="background-color: lightcyan"><code>c:\devapps\</code></span><code>python\</code><span style="background-color: honeydew"><code>miniconda3</code></span>
 
 
 ![GIF of installer running](python/setup/docs/installer.gif)
 
 ## Step 5 (skip if you are using ``c:\devapps``)
 
-Open <code><span style="background-color: lightcyan">c:\devapps\\</span>install_hook.bat</code> in Notepad and edit the contents so that it points to the correct location for you:
+Open <code><span style="background-color: lightcyan">c:\devapps\</span>install_hook.bat</code> in Notepad and edit the contents so that it points to the correct location for you:
 
 <pre>
 reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^
@@ -63,7 +63,7 @@ reg add "HKCU\Software\Microsoft\Command Processor" /v AutoRun ^
 
 ## Step 6
 
-Open <code><span style="background-color: lightcyan">c:\devapps\\</span>init.cmd</code> and edit it in the same way to match the paths you are using:
+Open <code><span style="background-color: lightcyan">c:\devapps\</span>init.cmd</code> and edit it in the same way to match the paths you are using:
 
 <pre>
 @echo "Custom AutoRun is executing this file:"
@@ -80,7 +80,7 @@ Open <code><span style="background-color: lightcyan">c:\devapps\\</span>init.cmd
 
 ## Step 8
 
-Run <code><span style="background-color: lightcyan">c:\devapps\\</span>install_hook.bat</code>
+Run <code><span style="background-color: lightcyan">c:\devapps\</span>install_hook.bat</code>
 
 ## Step 9
 
