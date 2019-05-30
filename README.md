@@ -28,7 +28,7 @@ And these folder paths should also exist (create them if necessary):
 <span style="background-color: lightcyan">c:\devapps\</span>python\setup
 </pre>
 
-There will be some other guff like this README, you can ignore or detail that.
+There will be some other stuff like this README, you can ignore or detail that.
 
 ## Step 3
 
