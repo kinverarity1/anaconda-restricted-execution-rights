@@ -35,8 +35,10 @@ There will be some other stuff like this README, you can ignore or detail that.
 Download the version of Anaconda/Miniconda you wish to install from the [Anaconda archive](https://repo.continuum.io/archive/) or [Miniconda archive](https://repo.continuum.io/miniconda/), and place it in the <code><span style="background-color: lightcyan">c:\devapps</span>\python\setup</code> folder, e.g.:
 
 <pre>
-<span style="background-color: lightcyan">c:\devapps\</span>python\setup\<span style="background-color: honeydew">Miniconda3-latest-Windows-x86_64.exe</span>
+<span style="background-color: lightcyan">c:\devapps\</span>python\setup\<span style="background-color: honeydew">Miniconda3-latest-Windows-x86.exe</span>
 </pre>
+
+<span style="background-color: red; color: white;">Warning for DEW staff:</span> Your computer has a 32-bit version of Oracle Client installed, so I recommend installing the 32-bit version of Python (i.e. `x86.exe`, not `x86_64.exe`), otherwise you will not be able to access SA Geodata.
 
 ## Step 4
 
