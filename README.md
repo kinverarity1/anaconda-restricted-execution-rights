@@ -9,7 +9,7 @@ This is intended for a specific audience. If you are not sure whether these inst
 Identify a location where you can run executables and/or batch files. For this example I will call this
 location <span style="background-color: lightcyan"><code>c:\devapps</code></span>.
 
-I believe you can use this path with needing to contact the Helpdesk.
+You can use this path with needing to contact the Helpdesk.
 
 ## Step 2
 
