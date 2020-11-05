@@ -20,6 +20,8 @@ Download and unzip the contents of this repository into that location, so that y
 <span style="background-color: lightcyan">c:\devapps\</span>install_hook.bat
 </pre>
 
+You can download this entire repository using this link: https://github.com/kinverarity1/anaconda-restricted-execution-rights/archive/master.zip
+
 And these folder paths should also exist (create them if necessary):
 
 <pre>
@@ -28,9 +30,11 @@ And these folder paths should also exist (create them if necessary):
 <span style="background-color: lightcyan">c:\devapps\</span>python\setup
 </pre>
 
-There will be some other stuff like this README, you can ignore or detail that.
+There will be some other stuff like this README, you can ignore or delete files such as that.
 
-## Step 3
+## Step 3 - Anaconda or Miniconda?
+
+Anaconda and Miniconda are functionally the same. The only difference is Anaconda is a very large download (~600 MB) which contains a lot of useful packages by default. If you are a beginner, I suggest starting with Anaconda. The instructions below are for Miniconda - simply replace "Miniconda" with "Anaconda" if you are installing the latter.
 
 Download the version of Anaconda/Miniconda you wish to install from the [Anaconda archive](https://repo.continuum.io/archive/) or [Miniconda archive](https://repo.continuum.io/miniconda/), and place it in the <code><span style="background-color: lightcyan">c:\devapps</span>\python\setup</code> folder, e.g.:
 
@@ -38,7 +42,7 @@ Download the version of Anaconda/Miniconda you wish to install from the [Anacond
 <span style="background-color: lightcyan">c:\devapps\</span>python\setup\<span style="background-color: honeydew">Miniconda3-latest-Windows-x86.exe</span>
 </pre>
 
-<span style="background-color: red; color: white;">Warning for DEW staff:</span> Your computer has a 32-bit version of Oracle Client installed, so I recommend installing the 32-bit version of Python (i.e. `x86.exe`, not `x86_64.exe`), otherwise you will not be able to access SA Geodata.
+<span style="background-color: red; color: white;">Warning for DEW staff:</span> Your computer has a 32-bit version of Oracle Client installed by default. You can either install the 32-bit version of Python so that it will work automatically with SA Geodata (not recommended), or download the 64-bit version of Python, and then install your own 64-bit version of Oracle Client, so that you can access SA Geodata (recommended). I will add instructions for installing 64-bit Oracle Client at a later time - in the meantime contact me (Kent Inverarity) directly. 
 
 ## Step 4
 
@@ -135,8 +139,30 @@ C:\Users\kinverarity>conda info
            offline mode : False
 </pre>
 
-## Step 9
+## Step 9 - if you want to use `conda-forge` (VERY STRONGLY RECOMMENDED)
 
-And now things like ``conda activate base`` will work fine.
+Open Command Prompt if not already still open from the previous step.
+
+Type the following command and press Enter:
+
+`conda config --add channels conda-forge`
+
+Then type this command:
+
+`conda config --set channel_priority strict `
+
+Now, whenever you want to install any kind of Python package, try this command first:
+
+`conda install PACKAGENAME`
+
+It will attempt to install it from the [conda-forge](https://conda-forge.org/#about) channel first, which is by far in 100% of situations, the best and easiest way to proceed.
+
+Only if that command fails would I suggest you revert to the Python Package Repository, with:
+
+`pip install PACKAGENAME`
+
+## Step 10 - Finished
+
+Now things like ``conda activate base`` will work fine.
 
 Everything works the same for Anaconda, including the nifty Anaconda Navigator GUI and all that.
