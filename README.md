@@ -22,6 +22,8 @@ Download and unzip the contents of this repository into that location, so that y
 
 You can download this entire repository using this link: https://github.com/kinverarity1/anaconda-restricted-execution-rights/archive/master.zip
 
+Alternatively you can download the two files above directly here: [init.cmd](https://raw.githubusercontent.com/kinverarity1/anaconda-restricted-execution-rights/master/init.cmd) and [install_hook.bat](https://raw.githubusercontent.com/kinverarity1/anaconda-restricted-execution-rights/master/install_hook.bat).
+
 And these folder paths should also exist (create them if necessary):
 
 <pre>
