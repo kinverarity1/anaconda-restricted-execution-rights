@@ -83,7 +83,7 @@ Open <code><span style="background-color: lightcyan">c:\devapps\\</span>init.cmd
 <span style="background-color: lightcyan">c:\devapps\</span>python\<span style="background-color: honeydew">miniconda3</span>\Library\bin;^
 <span style="background-color: lightcyan">c:\devapps\</span>python\<span style="background-color: honeydew">miniconda3</span>\Scripts
 @SET PATH=%CUSTOM_PATH%;%PATH%
-@SET TEMP=<span style="background-color: lightcyan">c:\devapps\</span>temp
+@SET TMPDIR=<span style="background-color: lightcyan">c:\devapps\</span>temp
 </pre>
 
 ## Step 8
@@ -102,7 +102,7 @@ Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
 >
 </pre>
 
-Every time ``cmd.exe`` is run, your ``init.cmd`` batch file will run, which will ensure the TEMP and PATH environment variables are correctly modified (overriding any system environment variable settings, which you may not be able to change).
+Every time ``cmd.exe`` is run, your ``init.cmd`` batch file will run, which will ensure the TMPDIR and PATH environment variables are correctly modified (overriding any system environment variable settings, which you may not be able to change).
 
 If you want to check, you can try running the command ``conda info``. You should get something like this, with the important parts highlighted:
 
