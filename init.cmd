@@ -7,4 +7,4 @@ c:\devapps\python\miniconda3\Library\usr\bin;^
 c:\devapps\python\miniconda3\Library\bin;^
 c:\devapps\python\miniconda3\Scripts
 @SET PATH=%CUSTOM_PATH%;%PATH%
-@SET TEMP=c:\devapps\temp
+@SET TMPDIR=c:\devapps\temp
